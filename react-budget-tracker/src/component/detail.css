@@ -1,0 +1,17 @@
+.income{
+    
+    border-bottom: 10px solid rgba(0, 255, 0, .5);
+  }
+.expense{
+    border-bottom: 10px solid rgba(255, 0, 0, .5);
+}
+.detail-card{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 30%;
+}
