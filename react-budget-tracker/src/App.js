@@ -1,5 +1,6 @@
 import React from "react"
 import Details from "./component/details"
+import Main from "./component/main.js"
 
 const App = () => {
   return(
@@ -8,7 +9,7 @@ const App = () => {
         <Details title="Income"/>
       </div>
       <div className="card">
-        <Details />
+        <Main />
       </div>
       <div className="card">
         <Details title="Expense" />
