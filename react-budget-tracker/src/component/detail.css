@@ -17,6 +17,7 @@
     width: 30%;
     
 }
+
 .content{
     padding: .5em;
 }
@@ -32,4 +33,19 @@
 }
 .form-select{
     width: 49%;
+}
+.list-container{
+    max-height: 15vh;
+    overflow-y: scroll;
+}
+li{
+    list-style: none; 
+    
+    
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }

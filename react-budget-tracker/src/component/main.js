@@ -1,6 +1,7 @@
 import React from "react"
 import "./detail.css"
 import Form from "./form.js"
+import List from "./list.js"
 
 
 const Main = () => {
@@ -11,6 +12,7 @@ const Main = () => {
             <h5>Total Balance $100</h5>
             <hr></hr>
             <Form />
+            <List />
 
 
 
