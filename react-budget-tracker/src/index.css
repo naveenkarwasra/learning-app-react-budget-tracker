@@ -30,13 +30,9 @@ h5{
 .card{
   background-color: white;  
   border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 20%);
-  
-  
-  
+  box-shadow: 2px 4px 4px 2px rgb(0, 0, 0, 20%);  
 }
-.income{
-    
+.income{    
   border-bottom: 10px solid rgba(0, 255, 0, .5);
 }
 .expense{
@@ -50,31 +46,15 @@ h5{
 .detail-card{
   display: flex;
   justify-content: space-around;  
-  align-items: center;
-  
+  align-items: center;  
 }
-
-
-
-
-
-
 .card-content{
   padding: .5em;
-  height: 72vh;
-  
-  
-  
-  
+  height: 72vh;  
 }
-
-
-
 header{
   margin-bottom: .5em;
 }
-
-
 .data-display-card{
   width: 32%;  
   margin: auto;
@@ -88,36 +68,30 @@ header{
   text-align: center;
   margin: 2em auto;
 }
-
-
 .form{
-    margin-top: 1em;
-    
+    margin-top: 1em;    
 }
 .form-input{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
-    width: 100%;
-    
+    width: 100%;       
 }
 .form-select{
     width: 49%;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: rgb(255, 248, 248);
-    padding: .2em;
-    
+    padding: .2em; 
+    outline: unset;   
 }
 .form-row2{
   padding: .1em .4em;
   width: 45.3%;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-  
+input[type="date"]::-webkit-calendar-picker-indicator{  
   -webkit-appearance: none;
-  width: 15px;
-  
+  width: 15px;  
   margin: 0px;
   margin-top: .2em;
 }
@@ -154,12 +128,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: .7rem;
   }
 }
-@media(max-width: 800px){
-  
+@media(max-width: 800px){  
   *{
     font-size: .8rem;
-  }
-  
+  }  
   h3{
     font-size: 1.2rem;
   }
@@ -178,8 +150,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .card-content{    
     height: 50vh;
   }
-}
-  
+} 
 
 .create-btn{
   width: 100%;
@@ -197,15 +168,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .create-btn:hover, .create-btn:focus{
   transform: scale(1.01);
 }
-
 .list-container{
     max-height: 19vh;
     overflow-y: scroll;
 }
 li{
-    list-style: none; 
-    
-    
+    list-style: none;     
 }
 .list{
     display: flex;
@@ -218,9 +186,9 @@ li{
 .list-icon{
   font-size: 1.5em;
   color: #fff;
-  padding: .1em .5em;
+  padding: 0.05em .5em;
   border-radius: 50%;
-  
+  border: 1px solid #b6b2b2;  
 }
 .list-icon-income{
   background-color: #14915f;
@@ -248,8 +216,7 @@ li{
 .list-delete-btn:hover, .list-delete-btn:focus{
   transform: scale(1.2);
 }
-.footer{
-  
+.footer{  
   margin: 2em;
   text-align: center;
   color: #b6b2b2;
@@ -264,8 +231,7 @@ li{
 @media(max-width: 755px){
   .form-select{
     font-size: .8rem;
-  }
-  
+  }  
   .form-row2{
     width: 47.8%;
   }
@@ -289,33 +255,26 @@ li{
     height: 140vh;   
   }
 }
-@media(max-width: 610px){
-  
+@media(max-width: 610px){  
   .form-row2{
     width: 47.8%;
-  }
-  
-   
+  }   
   .card-content{    
     height: 115vh;   
   }
 }
-@media(max-width: 505px){
-  
+@media(max-width: 505px){  
   .form-row2{
     width: 47.5%;
-  } 
-   
+  }    
   .card-content{    
     height: 95vh;   
   }
 }
-@media(max-width: 395px){
-  
+@media(max-width: 395px){  
   .form-row2{
     width: 47%;
-  } 
-   
+  }   
   .card-content{    
     height: 75vh;   
   }

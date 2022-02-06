@@ -9,11 +9,9 @@ const contextReducer = (state, action) => {
             transactions = [action.payload, ...state]
             localStorage.setItem("transactions", JSON.stringify(transactions))
             return transactions
-    
         default:
             return state;
     }
-
 }
 
 export default contextReducer
