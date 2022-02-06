@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { ExpenseTrackerContext } from "./context/context"
 import { incomeCategories, expenseCategories, resetCategories  } from "./component/category"
 
+
 const useData = (title) => {
     resetCategories()
     const {transactions} = useContext(ExpenseTrackerContext)
@@ -21,7 +22,7 @@ const useData = (title) => {
                 data: filteredCategories.map((category) => category.amount),
                 backgroundColor: filteredCategories.map((category) => category.color),              
             }],
-            
+           
             
         
     } 

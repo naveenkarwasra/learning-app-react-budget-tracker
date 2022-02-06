@@ -5,8 +5,13 @@
     margin: 0;
     font-size: 1rem;
 }
+html{
+  height: 100%;
+}
 body{
-  margin: auto 0;
+  margin: auto;
+  padding: 1em;
+  height: 100%;
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
   url("./images/money.png");
   background-size: cover;
@@ -22,7 +27,6 @@ h4{
 h5{
   font-size: 1.2rem;
 }
-
 .card{
   background-color: white;  
   border-radius: 3px;
@@ -33,38 +37,47 @@ h5{
 }
 .income{
     
-    border-bottom: 10px solid rgba(0, 255, 0, .5);
-  }
-.expense{
-    border-bottom: 10px solid rgba(255, 0, 0, .5);
+  border-bottom: 10px solid rgba(0, 255, 0, .5);
 }
+.expense{
+  border-bottom: 10px solid rgba(255, 0, 0, .5);
+}
+.page-wrapper{
+  position: relative;
+  height: 100vh;
+  margin-top: 2em;
+}
+.detail-card{
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  
+}
+
+
+
+
+
+
 .card-content{
   padding: .5em;
-  height: 57vh;
+  height: 72vh;
   
   
   
   
 }
+
 
 
 header{
   margin-bottom: .5em;
 }
-.detail-card{
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
-    align-items: center;
-}
+
 
 .data-display-card{
-  width: 32%;
-  
+  width: 32%;  
   margin: auto;
-  
-  
-  
 }
 .form-display-card{
   width: 28%;
@@ -89,19 +102,29 @@ header{
     
 }
 .form-select{
-    width: 48%;
+    width: 49%;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: rgb(255, 248, 248);
     padding: .2em;
+    
 }
 .form-row2{
   padding: .1em .4em;
-  width: 44.2%;
+  width: 45.3%;
 }
-@media(max-width: 1050px){
+input[type="date"]::-webkit-calendar-picker-indicator {
+  
+  -webkit-appearance: none;
+  width: 15px;
+  
+  margin: 0px;
+  margin-top: .2em;
+}
+
+@media(max-width: 1100px){
   .form-row2{
-    width: 44.2%;
+    width: 45.3%;
   }
   *{
     font-size: .9rem;
@@ -118,14 +141,25 @@ header{
   body{
     font-size: 1rem;
   }
-}
-@media(max-width: 800px){
-  .form-row2{
-    width: 45%;
+  .form-display-card{
+    height: 75vh;
   }
-  *{
+  .card-content{
+    height: 60vh;
+  }
+}
+
+@media(max-width: 940px){
+  .form-select{
     font-size: .7rem;
   }
+}
+@media(max-width: 800px){
+  
+  *{
+    font-size: .8rem;
+  }
+  
   h3{
     font-size: 1.2rem;
   }
@@ -138,19 +172,15 @@ header{
   body{
     font-size: .8rem;
   }
-  .form-display-card{
-    
-    height: 60vh;
-    
+  .form-display-card{    
+    height: 65vh;
   }
-  .card-content{
-    padding: .5em;
-    height: 50vh;  
-    
-    
-    
+  .card-content{    
+    height: 50vh;
   }
 }
+  
+
 .create-btn{
   width: 100%;
   text-transform: uppercase;
@@ -165,7 +195,7 @@ header{
   transition: transform 200ms ease-in-out; 
 }
 .create-btn:hover, .create-btn:focus{
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 .list-container{
@@ -188,7 +218,7 @@ li{
 .list-icon{
   font-size: 1.5em;
   color: #fff;
-  padding: .2em .5em;
+  padding: .1em .5em;
   border-radius: 50%;
   
 }
@@ -218,9 +248,77 @@ li{
 .list-delete-btn:hover, .list-delete-btn:focus{
   transform: scale(1.2);
 }
-
-
-
-.chart-data{
-  margin: auto;
+.footer{
+  
+  margin: 2em;
+  text-align: center;
+  color: #b6b2b2;
 }
+.footer-text{
+  font-size: .8rem;
+}
+.footer a{
+  text-decoration: none;
+  color: #04e2fffb;
+}
+@media(max-width: 755px){
+  .form-select{
+    font-size: .8rem;
+  }
+  
+  .form-row2{
+    width: 47.8%;
+  }
+  .detail-card{
+    flex-direction: column;
+    justify-content: space-between;  
+  }
+  .data-display-card{
+    width: 100%;
+    margin-bottom: 1em;
+    order: 1;
+  }
+  .form-display-card{
+    width: 98%;
+    height: 70vh;
+    margin-bottom: 1em;
+    order: 0;
+  }  
+  .card-content{
+    padding: .5em;
+    height: 140vh;   
+  }
+}
+@media(max-width: 610px){
+  
+  .form-row2{
+    width: 47.8%;
+  }
+  
+   
+  .card-content{    
+    height: 115vh;   
+  }
+}
+@media(max-width: 505px){
+  
+  .form-row2{
+    width: 47.5%;
+  } 
+   
+  .card-content{    
+    height: 95vh;   
+  }
+}
+@media(max-width: 395px){
+  
+  .form-row2{
+    width: 47%;
+  } 
+   
+  .card-content{    
+    height: 75vh;   
+  }
+}
+
+

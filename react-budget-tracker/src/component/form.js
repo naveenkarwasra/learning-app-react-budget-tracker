@@ -53,7 +53,7 @@ const Form = () => {
             
             <div className="form-input">
                 <input type="number" placeholder="Amount" step={10} className="form-select form-row2" value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})}/>
-                <input type="date" placeholder="Date" className="form-select form-row2" value={formData.date} onChange={(e) => setFormData({...formData, date: e.target.value})}/>
+                <input type="date" placeholder="Date" className="form-select form-row2 date-select" value={formData.date} onChange={(e) => setFormData({...formData, date: e.target.value})}/>
             </div>
             <div>
                 <button className="create-btn" onClick= {createTransaction} >Create</button>

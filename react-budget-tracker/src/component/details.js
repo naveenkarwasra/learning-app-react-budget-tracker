@@ -15,9 +15,10 @@ const Details = ({ title }) => {
         <div className={title === "Income" ? "income" : "expense"}>
             <div className="card-content">
                 <header title={title}>{title}</header>
-                <div >
-                    <h5>${total}</h5>
-                    <Doughnut data={chartData}  className="chart-data" />
+                <h5>${total}</h5>
+                <div className="chart-data" >
+                    
+                <Doughnut data={chartData} />
 
                 </div>
             </div>
